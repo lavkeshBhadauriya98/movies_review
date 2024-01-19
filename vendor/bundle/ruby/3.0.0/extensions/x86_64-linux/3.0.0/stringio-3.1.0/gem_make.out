@@ -1,0 +1,8 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240104-11161-njvtfe.rb extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\=
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= install

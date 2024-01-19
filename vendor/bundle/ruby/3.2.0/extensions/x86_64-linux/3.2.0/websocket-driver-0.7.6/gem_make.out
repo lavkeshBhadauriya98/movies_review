@@ -1,0 +1,10 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/home/dell/.rvm/rubies/ruby-3.2.0/bin/ruby -I /home/dell/.rvm/rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-49kynu sitelibdir\=./.gem.20240104-16122-49kynu clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-49kynu sitelibdir\=./.gem.20240104-16122-49kynu
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-49kynu sitelibdir\=./.gem.20240104-16122-49kynu install
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-49kynu sitelibdir\=./.gem.20240104-16122-49kynu clean

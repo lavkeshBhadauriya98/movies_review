@@ -1,0 +1,8 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/date-3.3.4/ext/date
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240104-11161-ol3f1b.rb extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/date-3.3.4/ext/date
+make DESTDIR\= clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/date-3.3.4/ext/date
+make DESTDIR\=
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/date-3.3.4/ext/date
+make DESTDIR\= install

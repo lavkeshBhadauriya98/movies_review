@@ -1,0 +1,14 @@
+<h1>Director</h1>
+
+
+
+   <%= form_with(model: @director, url: directors_path, method: :post , class:'director-form') do|form| %>
+   <%= form.label :director_name , class: 't1' %><br>
+   <%= form.text_field :director_name, class: 'title' %><br>
+   <%= form.label :gender , class: 't1' %><br>
+   <%= form.text_field :gender, class: 'title' %><br>
+
+    <%= form.submit  class:"submit_new"%>
+
+
+<% end %>

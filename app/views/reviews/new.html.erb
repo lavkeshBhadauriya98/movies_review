@@ -1,0 +1,12 @@
+<h1>Reviews</h1>
+
+
+<%= form_with(model: @review , url: movies_path, method: :post) do|f|%>
+<%= f.label :user%><br>
+<%= f.text_field :user %><br>
+
+<%=f.label :rating%><br>
+<%=f.number_field :rating , in: 1..5 , required: true%><br>
+
+<%=f.submit "Create Reviews"%>
+<% end %>

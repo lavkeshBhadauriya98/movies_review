@@ -1,0 +1,13 @@
+<h1>Edit Review</h1>
+
+<%= form_with(model: [@movie, @review], method: :patch) do |f| %>
+  <%= f.label :comment %><br>
+  <%= f.text_field :comment %><br>
+
+  <%= f.label :rating %><br>
+  <%= f.number_field :rating, in: 1..5, required: true %><br>
+
+  <%= f.submit "Update Review" %>
+<% end %>
+
+<%= link_to 'Cancel', movie_reviews_path(@movie) %>

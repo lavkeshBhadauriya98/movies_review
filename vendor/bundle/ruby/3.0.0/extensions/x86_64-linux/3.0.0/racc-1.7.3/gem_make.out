@@ -1,0 +1,8 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240104-11161-825xr2.rb extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\=
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= install

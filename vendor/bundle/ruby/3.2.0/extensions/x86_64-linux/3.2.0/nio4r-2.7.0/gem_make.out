@@ -1,0 +1,10 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.0/ext/nio4r
+/home/dell/.rvm/rubies/ruby-3.2.0/bin/ruby -I /home/dell/.rvm/rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-3zby31 sitelibdir\=./.gem.20240104-16122-3zby31 clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-3zby31 sitelibdir\=./.gem.20240104-16122-3zby31
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-3zby31 sitelibdir\=./.gem.20240104-16122-3zby31 install
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/nio4r-2.7.0/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-3zby31 sitelibdir\=./.gem.20240104-16122-3zby31 clean

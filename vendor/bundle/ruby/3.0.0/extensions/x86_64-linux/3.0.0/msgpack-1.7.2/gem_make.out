@@ -1,0 +1,8 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/msgpack-1.7.2/ext/msgpack
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240104-11161-aafh9c.rb extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/msgpack-1.7.2/ext/msgpack
+make DESTDIR\= clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/msgpack-1.7.2/ext/msgpack
+make DESTDIR\=
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/msgpack-1.7.2/ext/msgpack
+make DESTDIR\= install

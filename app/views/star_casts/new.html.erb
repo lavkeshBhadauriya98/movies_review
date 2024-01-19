@@ -1,0 +1,13 @@
+<h1>Star_Cast</h1>
+ <p><%= StarCast.actor_name %></p>
+ <p><%= StarCast.actresses_name %></p>
+   <%= form_with(model: @StarCast, url: star_casts, method: :post , class:'director-form') do|form| %>
+   <%= form.label :actor_name, class: 't1' %><br>
+   <%= form.text_field :actresses_name, class: 'title' %><br>
+   <%= form.label :gender , class: 't1' %><br>
+   <%= form.text_field :gender, class: 'title' %><br>
+
+    <%= form.submit  class:"submit_new"%>
+
+
+<% end %>

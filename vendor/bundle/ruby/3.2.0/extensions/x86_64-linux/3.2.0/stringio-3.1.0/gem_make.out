@@ -1,0 +1,10 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+/home/dell/.rvm/rubies/ruby-3.2.0/bin/ruby -I /home/dell/.rvm/rubies/ruby-3.2.0/lib/ruby/3.2.0 extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-dzcr87 sitelibdir\=./.gem.20240104-16122-dzcr87 clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-dzcr87 sitelibdir\=./.gem.20240104-16122-dzcr87
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-dzcr87 sitelibdir\=./.gem.20240104-16122-dzcr87 install
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240104-16122-dzcr87 sitelibdir\=./.gem.20240104-16122-dzcr87 clean

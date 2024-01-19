@@ -1,0 +1,8 @@
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+/usr/bin/ruby3.0 -I /usr/lib/ruby/vendor_ruby -r ./siteconf20240104-11161-d3xl1l.rb extconf.rb
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= clean
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\=
+current directory: /home/dell/Desktop/MovieReview/vendor/bundle/ruby/3.0.0/gems/puma-6.4.1/ext/puma_http11
+make DESTDIR\= install

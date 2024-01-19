@@ -1,0 +1,60 @@
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .col-6 {
+    width: 48%; 
+    margin-bottom: 20px; 
+  }
+
+  .create-link {
+    display: block;
+     margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
+  }
+  .pag{
+     display: block;
+    margin-top: 100px;
+    margin-left: 100px;
+    text-align: center;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <h1>Movies</h1>
+    <% @movies.each do |movie| %>
+      <div class="col-6">
+        <h2><%= link_to movie.title, movie_path(movie) %></h2>
+        <p><%= movie.description %></p>
+        
+        <% if movie.reviews.present? %>
+          <strong><p><%= movie.reviews.count %></p></strong>
+        <% end %>
+      </div>
+
+      <div class="col-6">
+        <% if movie.image.attached? %>
+          <%= image_tag movie.image, style: "width: 100px; height: 100px;" %>
+        <% else %>
+          <p>No poster available</p>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'star_cast', new_star_cast_path(@star_cast), class: 'create-link' %><br>
+  <%= link_to 'Director', new_director_path(@director), class: 'create-link' %><br>
+  <%= link_to 'Create', new_movie_path(@movie), class: 'create-link' %><br>
+  <%= paginate @movies, class:'pag' %>
+</div>
+
+

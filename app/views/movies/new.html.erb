@@ -1,0 +1,62 @@
+<style>
+.movie-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+.t1 {
+  font-weight: bold;
+}
+.title,
+.des,
+.release_date,
+.I1 {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.submit_new {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit_new:hover {
+  background-color: #45a049;
+}
+
+</style>
+<h1 class="h1">New Movies</h1>
+
+<%= form_with(model: @movie, url: movies_path, method: :post , class:'movie-form') do|f| %>
+
+   <%= f.label :title , class: 't1' %><br>
+   <%= f.text_field :title, class: 'title' %><br>
+
+   <%= f.label :description, class: 't1' %><br>
+   <%= f.text_field :description, class:'des' %><br>
+
+   <%= f.label :director, class: 't1' %><br>
+   <%= f.collection_select :director_id, Director.order(:director_name), :id, :director_name %><br>
+
+   <%= f.label :release_date ,class: 't1' %><br>
+   <%= f.text_field :release_date , class: 'title'%><br>
+
+   <%= f.label :image, class: 't1' %><br>
+   <%= f.file_field :image , class:'I1'%><br>
+
+
+    
+ <%= f.submit  class:"submit_new"%>
+
+<% end %>
