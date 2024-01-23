@@ -8,6 +8,7 @@ class MoviesController < ApplicationController
 
 	def show
 		@reviews = @movie.reviews
+		@star_cast = @movie.star_casts
 	end
 
 	def new

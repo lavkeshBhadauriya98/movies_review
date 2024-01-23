@@ -91,7 +91,13 @@
 
 <p class="des"><strong>Description:</strong> <%= @movie.description %></p>
 <p class="release_date"><strong>release_date:</strong> <%= @movie.release_date %></p>
-
+  <div>
+    <% @star_cast.each do |star_cast| %>
+      <%= link_to star_cast.actor_name, "https://stackoverflow.com/questions/34107072/nameerror-undefined-local-variable-or-method"%><br>
+      <%= star_cast.actresses_name%><br>
+       <%= link_to star_cast.link%><br>
+    <% end %>
+  </div>
 
 <h1 class="Rev">Reviews</h1>
 <% @movie.reviews.each do |review|%>
