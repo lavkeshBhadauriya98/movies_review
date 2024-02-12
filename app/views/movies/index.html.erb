@@ -36,12 +36,10 @@
       <div class="col-6">
         <h2><%= link_to movie.title, movie_path(movie) %></h2>
         <p><%= movie.description %></p>
-        
         <% if movie.reviews.present? %>
           <strong><p><%= movie.reviews.count %></p></strong>
         <% end %>
       </div>
-
       <div class="col-6">
         <% if movie.image.attached? %>
           <%= image_tag movie.image, style: "width: 100px; height: 100px;" %>
@@ -51,9 +49,9 @@
       </div>
     <% end %>
   </div>
-  <%= link_to 'star_cast', new_star_cast_path(@star_cast), class: 'create-link' %><br>
-  <%= link_to 'Director', new_director_path(@director), class: 'create-link' %><br>
-  <%= link_to 'Create', new_movie_path(@movie), class: 'create-link' %><br>
+  <%= link_to 'star_cast', new_star_cast_path, class: 'create-link' %><br>
+  <%= link_to 'Director', new_director_path, class: 'create-link' %><br>
+  <%= link_to 'Create', new_movie_path, class: 'create-link' %><br>
   <%= paginate @movies, class:'pag' %>
 </div>
 

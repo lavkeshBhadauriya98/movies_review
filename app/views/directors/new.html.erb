@@ -1,7 +1,6 @@
 <h1>Director</h1>
-
-
-
+ <p><%= @director.director_name %></p>
+ <p><%= @director.gender %></p>
    <%= form_with(model: @director, url: directors_path, method: :post , class:'director-form') do|form| %>
    <%= form.label :director_name , class: 't1' %><br>
    <%= form.text_field :director_name, class: 'title' %><br>
@@ -12,3 +11,4 @@
 
 
 <% end %>
+
