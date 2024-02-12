@@ -95,32 +95,39 @@
     <% @star_cast.each do |star_cast| %>
       <%= link_to star_cast.actor_name, "https://stackoverflow.com/questions/34107072/nameerror-undefined-local-variable-or-method"%><br>
       <%= star_cast.actresses_name%><br>
-       <%= link_to star_cast.link%><br>
+      <%= link_to star_cast.link%><br>
     <% end %>
   </div>
 
 <h1 class="Rev">Reviews</h1>
-<% @movie.reviews.each do |review|%>
-  <p class="com"><%=review.comment%></p>
-   <p class="rating"><%=review.rating%></p>
+  <% @movie.reviews.each do |review|%>
+      <p class="com"><%=review.comment%></p>
+      <p class="rating"><%=review.rating%></p>
   <% if signed_in? && (current_user.id == review.user_id) %>
-  <%= button_to 'Delete', movie_review_path(@movie, review), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+     <%= button_to 'Delete', movie_review_path(@movie, review), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
   <% end %>
 <% end %>
 
-<%= form_with model: [ @movie, @movie.reviews.build ], class: 'f1' do |f| %>
-<%= f.label :comment, class: 'f2' %><br>
-<%= f.text_field :comment, class: 'f3' %><br>
-<%= f.label :rating, class: 'ra' %><br>
-<%= f.number_field :rating, in: 1..5, required: true, style: "margin-bottom: 10px;" %><br>
-<%=f.submit "Create Reviews", class:'btn-reviews'%>
+<% if current_user.movies.pluck(:title).include?(@movie.title) %>
+  <button type="button" class="btn btn-outline-danger "><%= link_to 'Back to Movies', movies_path %></</button>
+<% else %>
+  <%= form_with model: [ @movie, @movie.reviews.build ], class: 'f1' do |f| %>
+    <%= f.label :comment, class: 'f2' %><br>
+    <%= f.text_field :comment, class: 'f3' %><br>
+    <%= f.label :rating, class: 'ra' %><br>
+    <%= f.number_field :rating, in: 1..5, required: true, style: "margin-bottom: 10px;" %><br>
+    <%=f.submit "Create Reviews", class:'btn-reviews'%>
+  <% end %>
+  <% if signed_in? && (current_user.id == @movie.user_id) %>
+    <%= link_to 'Edit Movie', edit_movie_path(@movie), class:'btn-edit' %>
+  <% end %>
+
+  <button type="button" class="btn btn-outline-danger "><%= link_to 'Back to Movies', movies_path %></</button>
 <% end %>
-<% if signed_in? && (current_user.id == @movie.user_id) %>
-  <%= link_to 'Edit Movie', edit_movie_path(@movie), class:'btn-edit' %>
-<% end %>
+
+
 
  
 
-<button type="button" class="btn btn-outline-danger "><%= link_to 'Back to Movies', movies_path %></</button>
 
 

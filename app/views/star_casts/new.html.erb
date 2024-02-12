@@ -2,11 +2,11 @@
  <p><%= @star_cast.actor_name %></p>
  <p><%= @star_cast.actresses_name %></p>
    <%= form_with(model: @star_cast, url: star_casts_path,method: :post) do |form| %>
-   <%=form.label :actor_name%><br>
-  <%= form.text_field :actor_name %><br>
-  <%=form.label :actresses_name%><br>
-  <%= form.text_field :actresses_name %><br>
-   <%= form.collection_select :director_id, Director.order(:director_name), :id, :director_name %><br>
+     <%=form.label :actor_name%><br>
+     <%= form.text_field :actor_name %><br>
+     <%=form.label :actresses_name%><br>
+     <%= form.text_field :actresses_name %><br>
+     <%= form.collection_select :director_id, Director.order(:director_name), :id, :director_name %><br>
     <%= form.collection_select :movie_id, Movie.order(:title), :id, :title %><br>
     <%=form.label :link%><br>
      <%= form.text_field :link %><br>

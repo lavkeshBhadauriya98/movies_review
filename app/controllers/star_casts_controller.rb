@@ -1,4 +1,5 @@
 class StarCastsController < ApplicationController
+  before_action :set_star_cast, only: [:create, :show]
 
   def index
    @star_cast = @movie.star_cast
